@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #333333;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header__top {
+  background: #fff;
+  padding: 10px 0;
+}
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__location {
+  min-width: 96px;
+  height: 32px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  background-image: url(../img/location.svg);
+  background-repeat: no-repeat;
+  background-position: center left 9px;
+  padding: 0 9px 0 34px;
+}
+.header__menu {
+  display: flex;
+}
+.header__delivery {
+  display: flex;
+  align-items: center;
+}
+.header__social {
+  display: flex;
+  align-items: center;
+}
+.header__button {
+  font-weight: 700;
+  font-size: 14px;
+  color: #ebebeb;
+  background: #b9956f;
+  border-radius: 4px;
+  padding: 10px 37px;
+  transition: all 0.3s;
+}
+.header__button:hover {
+  background: #d2a97e;
+}
+.header__lang {
+  display: flex;
+  font-size: 16px;
+}
+.header__lang::after {
+  content: url(../img/lang-arrow.svg);
+}
+.header__bottom {
+  background: #03453b;
+  padding: 15px 0;
+}
+.header__phone {
+  display: flex;
+  align-items: center;
+}
+.header__search {
+  width: 398px;
+  height: 42px;
+  background: transparent;
+  border: 1px solid #bababa;
+  border-radius: 4px;
+  background-image: url(../img/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  color: #fff;
+  padding: 0 12px;
+}
+.header__search::-moz-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  color: #898989;
+}
+.header__search:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  color: #898989;
+}
+.header__search::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  color: #898989;
+}
+.header__icons {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  position: relative;
+}
+.menu-item:not(:last-child) {
+  margin-right: 15px;
+}
+.menu-item:hover .menu-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.menu-item:hover .menu-link.dropdown::after {
+  transform: rotate(180deg);
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 13px;
+}
+.menu-link.dropdown::after {
+  content: url(../img/menu-arrow.svg);
+  display: block;
+  transition: all 0.3s;
+  margin: 0 0 0px 5px;
+}
+
+.menu-dropdown {
+  position: absolute;
+  top: 100%;
+  background: #ffffff;
+  border-radius: 4px;
+  transform: translateY(-10%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  padding: 10px 20px 10px 10px;
+}
+.menu-dropdown__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+.menu-dropdown__link {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+.menu-dropdown__link:hover {
+  color: #B9956F;
+}
+
+.delivery-text {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.delivery-worktime {
+  margin-left: 10px;
+}
+.delivery-worktime__text {
+  display: block;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.social-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.phone-number {
+  display: flex;
+  align-items: center;
+}
+.phone-number__icon {
+  margin-right: 8px;
+}
+.phone-number__text {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 16px;
+  color: #ebebeb;
+}
+.phone-number:not(:last-child) {
+  margin-right: 8px;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+}
+.icon-link__text {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: #ebebeb;
+  margin-left: 7px;
+}
+.icon-link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.banner__item {
+  background-repeat: no-repeat;
+}
+.banner__item--flower {
+  background-image: url(../img/banner-img.jpg);
+}/*# sourceMappingURL=style.css.map */
